@@ -1,6 +1,9 @@
 import datetime as datetime
 
 start = datetime.datetime.now()
+
+request_id = 1
+
 def Fibonacci(N):
     all = []
     f1 = 0
@@ -15,12 +18,13 @@ def Fibonacci(N):
             f1 = f2
             f2 = temp
             all.append(f2)
-    print(N, " -> ",",".join([str(k) for k in all]))
+    print("RequestID:",request_id, "N:",N, " -> ",",".join([str(k) for k in all]))
 
 fd = open('input.txt')
 for i in fd:
     N = int(i)
     Fibonacci(N)
+    request_id = request_id + 1
 
 end = datetime.datetime.now()
 

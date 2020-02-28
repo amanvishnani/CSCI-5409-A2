@@ -7,9 +7,10 @@ def factorial(N):
     return factorial(N-1) * N
 
 fd = open('input.txt')
+req_id = 1
 for i in fd:
     N = int(i)
-    print(N, " -> ", factorial(N))
+    print("RequestID:",req_id, "N:", N, " -> ", factorial(N))
 
 end = datetime.datetime.now()
 
