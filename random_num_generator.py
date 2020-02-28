@@ -1,6 +1,6 @@
 import numpy as np
 
-rand = np.random.randint(1, 50, 100000)
+rand = np.random.randint(1, 50, 900000)
 
 fd = open('input.txt', 'w')
 

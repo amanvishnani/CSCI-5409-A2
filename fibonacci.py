@@ -1,3 +1,6 @@
+import datetime as datetime
+
+start = datetime.datetime.now()
 def Fibonacci(N):
     all = []
     f1 = 0
@@ -18,3 +21,8 @@ fd = open('input.txt')
 for i in fd:
     N = int(i)
     Fibonacci(N)
+
+end = datetime.datetime.now()
+
+print(f"################# Start Time: {start} ##############")
+print(f"################# End Time: {end} ##############")
