@@ -15,7 +15,7 @@ def Fibonacci(N):
             f1 = f2
             f2 = temp
             all.append(f2)
-    print(",".join([str(k) for k in all]))
+    print(N, " -> ",",".join([str(k) for k in all]))
 
 fd = open('input.txt')
 for i in fd:

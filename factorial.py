@@ -9,7 +9,7 @@ def factorial(N):
 fd = open('input.txt')
 for i in fd:
     N = int(i)
-    print(factorial(N))
+    print(N, " -> ", factorial(N))
 
 end = datetime.datetime.now()
 
