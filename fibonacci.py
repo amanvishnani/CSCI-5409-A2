@@ -24,5 +24,5 @@ for i in fd:
 
 end = datetime.datetime.now()
 
-print(f"################# Start Time: {start} ##############")
-print(f"################# End Time: {end} ##############")
+print("################# Start Time:", start, "##############")
+print("################# End Time:", end, "##############")
